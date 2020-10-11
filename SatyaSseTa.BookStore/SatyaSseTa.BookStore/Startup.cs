@@ -30,11 +30,20 @@ namespace SatyaSseTa.BookStore
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
+                endpoints.Map("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.Map("/satya", async context =>
+                {
+                    await context.Response.WriteAsync("Hello Satya!");
+                });
+            });
+
         }
     }
 }
