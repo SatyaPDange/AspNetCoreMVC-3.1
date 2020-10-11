@@ -10,10 +10,19 @@ namespace SatyaSseTa.BookStore.Controllers
     {
         public ViewResult Index()
         {
-            return View();
+            //var obj = new { Id = 1, Name = "Satya" };
+
+            //return View("AboutUs", obj);
+            return View("../../TempView/SatyaTemp");
+
         }
 
         public ViewResult AboutUs()
+        {
+            return View();
+        }
+
+        public ViewResult ContactUs()
         {
             return View();
         }
