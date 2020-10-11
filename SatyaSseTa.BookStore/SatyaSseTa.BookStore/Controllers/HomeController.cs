@@ -8,9 +8,15 @@ namespace SatyaSseTa.BookStore.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "Satya";
+            return View();
         }
+
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+
     }
 }
