@@ -13,8 +13,8 @@ namespace SatyaSseTa.BookStore.Controllers
             //var obj = new { Id = 1, Name = "Satya" };
 
             //return View("AboutUs", obj);
-            return View("../../TempView/SatyaTemp");
-
+            //return View("../../TempView/SatyaTemp");
+            return View();
         }
 
         public ViewResult AboutUs()
